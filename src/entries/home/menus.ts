@@ -6,7 +6,15 @@ export const menus: Array<DrawerMenuItem> = [
         path: 'dashboard',
     },
     {
-        name: '404',
-        path: '404',
+        name: '武器',
+        path: 'weapon',
     },
+    {
+        name: '护甲',
+        path: 'armor',
+    },
+    // {
+    //     name: '404',
+    //     path: '404',
+    // },
 ];

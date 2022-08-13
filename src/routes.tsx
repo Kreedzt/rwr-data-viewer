@@ -2,6 +2,8 @@ import { Navigate, useRoutes } from 'react-router-dom';
 import Home from './entries/home/Home';
 import Dashboard from './entries/dashboard/Dashboard';
 import NotFound from './entries/notFound/NotFound';
+import Weapon from './entries/weapon/Weapon';
+import Armor from './entries/armor/Armor';
 
 const Router = () => {
     return useRoutes([
@@ -12,6 +14,14 @@ const Router = () => {
                 {
                     path: 'dashboard',
                     element: <Dashboard />,
+                },
+                {
+                    path: 'weapon',
+                    element: <Weapon />,
+                },
+                {
+                    path: 'armor',
+                    element: <Armor />,
                 },
                 {
                     path: '404',

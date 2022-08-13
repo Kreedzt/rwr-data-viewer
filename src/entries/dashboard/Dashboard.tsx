@@ -5,7 +5,7 @@ type DashboardProps = {
 };
 
 const Dashboard: FC<DashboardProps> = () => {
-    return <div>Dashboard</div>;
+    return <div>欢迎页</div>;
 };
 
 export default Dashboard;

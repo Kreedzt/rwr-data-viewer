@@ -126,18 +126,23 @@ const Home: FC = () => {
                 </AppBar>
             </Box>
             <Drawer open={drawerOpen} onClose={onCloseDrawer}>
-                <List>
-                    {menus.map((m) => (
-                        <ListItem key={m.path} onClick={onDrawerMenuClick(m)}>
-                            <ListItemButton>
-                                <ListItemIcon>
-                                    <InboxIcon />
-                                </ListItemIcon>
-                                <ListItemText primary={m.name} />
-                            </ListItemButton>
-                        </ListItem>
-                    ))}
-                </List>
+                <Box sx={{ width: 250 }} role="presentation">
+                    <List>
+                        {menus.map((m) => (
+                            <ListItem
+                                key={m.path}
+                                onClick={onDrawerMenuClick(m)}
+                            >
+                                <ListItemButton>
+                                    <ListItemIcon>
+                                        <InboxIcon />
+                                    </ListItemIcon>
+                                    <ListItemText primary={m.name} />
+                                </ListItemButton>
+                            </ListItem>
+                        ))}
+                    </List>
+                </Box>
             </Drawer>
             <Outlet />
         </div>
