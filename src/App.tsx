@@ -1,23 +1,11 @@
 import { useState } from 'react';
-import Button from '@mui/material/Button';
-
-import './App.css';
+import Home from './entries/home/Home';
+import Router from './routes';
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
-        <div className="App">
-            <h1>RWR Data Viewer</h1>
-             <div className="card">
-                <Button
-                    variant="contained"
-                    onClick={() => setCount((count) => count + 1)}
-                >
-                    count is {count}
-                </Button>
-                <p>Incoming...</p>
-            </div>
+        <div className="app">
+            <Router />
         </div>
     );
 }
