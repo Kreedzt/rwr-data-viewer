@@ -1,5 +1,5 @@
-import React, { FC, useCallback, useState } from 'react';
-import { Outlet, useNavigate } from 'react-router-dom';
+import React, {FC, useCallback, useEffect, useState} from 'react';
+import {Outlet, useLocation, useNavigate} from 'react-router-dom';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -68,6 +68,7 @@ const Home: FC = () => {
         path: '/',
     });
     const navigate = useNavigate();
+    const location = useLocation();
 
     const onOpenDrawer = useCallback(() => {
         setDrawerOpen(true);
@@ -86,6 +87,12 @@ const Home: FC = () => {
         },
         [],
     );
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+            navigate('/dashboard');
+        }
+    }, []);
 
     return (
         <div className="home">
