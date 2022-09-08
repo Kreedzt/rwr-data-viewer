@@ -6,6 +6,7 @@ specifiers:
   '@fontsource/roboto': ^4.5.7
   '@mui/icons-material': ^5.8.4
   '@mui/material': ^5.9.3
+  '@mui/x-data-grid': ^5.17.1
   '@tauri-apps/api': ^1.0.2
   '@tauri-apps/cli': ^1.0.5
   '@types/react': ^18.0.15
@@ -27,9 +28,10 @@ dependencies:
   '@fontsource/roboto': registry.npmmirror.com/@fontsource/roboto/4.5.7
   '@mui/icons-material': registry.npmmirror.com/@mui/icons-material/5.8.4_x6czzi3axj3g3crkmdh4a3wnjy
   '@mui/material': registry.npmmirror.com/@mui/material/5.9.3_x23mn2l7fw5e56g6ttw67k5uxm
+  '@mui/x-data-grid': registry.npmmirror.com/@mui/x-data-grid/5.17.1
   '@tauri-apps/api': registry.npmmirror.com/@tauri-apps/api/1.0.2
   mobx: registry.npmmirror.com/mobx/6.6.1
-  mobx-react-lite: registry.npmmirror.com/mobx-react-lite/3.4.0
+  mobx-react-lite: registry.npmmirror.com/mobx-react-lite/3.4.0_m26jawr67gnusmh4egzqtnhxru
   react: registry.npmmirror.com/react/18.2.0
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
   react-router-dom: registry.npmmirror.com/react-router-dom/6.3.0_biqbaboplfbrettd7655fr4n2y
@@ -597,7 +599,7 @@ packages:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.9
       '@emotion/is-prop-valid': registry.npmmirror.com/@emotion/is-prop-valid/1.2.0
       '@mui/types': registry.npmmirror.com/@mui/types/7.1.5_@types+react@18.0.15
-      '@mui/utils': registry.npmmirror.com/@mui/utils/5.9.3_react@18.2.0
+      '@mui/utils': registry.npmmirror.com/@mui/utils/5.9.3
       '@popperjs/core': registry.npmmirror.com/@popperjs/core/2.11.5
       '@types/react': registry.npmmirror.com/@types/react/18.0.15
       clsx: registry.npmmirror.com/clsx/1.2.1
@@ -653,7 +655,7 @@ packages:
       '@mui/base': registry.npmmirror.com/@mui/base/5.0.0-alpha.92_bb2bxwco6ptpubzwpazr52qf6i
       '@mui/system': registry.npmmirror.com/@mui/system/5.9.3_ihaomijnambxwtysddndddrzzy
       '@mui/types': registry.npmmirror.com/@mui/types/7.1.5_@types+react@18.0.15
-      '@mui/utils': registry.npmmirror.com/@mui/utils/5.9.3_react@18.2.0
+      '@mui/utils': registry.npmmirror.com/@mui/utils/5.9.3
       '@types/react': registry.npmmirror.com/@types/react/18.0.15
       '@types/react-transition-group': registry.npmmirror.com/@types/react-transition-group/4.4.5
       clsx: registry.npmmirror.com/clsx/1.2.1
@@ -679,7 +681,7 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.9
-      '@mui/utils': registry.npmmirror.com/@mui/utils/5.9.3_react@18.2.0
+      '@mui/utils': registry.npmmirror.com/@mui/utils/5.9.3
       '@types/react': registry.npmmirror.com/@types/react/18.0.15
       prop-types: registry.npmmirror.com/prop-types/15.8.1
       react: registry.npmmirror.com/react/18.2.0
@@ -735,7 +737,7 @@ packages:
       '@mui/private-theming': registry.npmmirror.com/@mui/private-theming/5.9.3_3hx2ussxxho4jajbwrd6gq34qe
       '@mui/styled-engine': registry.npmmirror.com/@mui/styled-engine/5.8.7_rq3l25qc4qpq3j4w6o4x7hatzy
       '@mui/types': registry.npmmirror.com/@mui/types/7.1.5_@types+react@18.0.15
-      '@mui/utils': registry.npmmirror.com/@mui/utils/5.9.3_react@18.2.0
+      '@mui/utils': registry.npmmirror.com/@mui/utils/5.9.3
       '@types/react': registry.npmmirror.com/@types/react/18.0.15
       clsx: registry.npmmirror.com/clsx/1.2.1
       csstype: registry.npmmirror.com/csstype/3.1.0
@@ -757,21 +759,30 @@ packages:
       '@types/react': registry.npmmirror.com/@types/react/18.0.15
     dev: false
 
-  registry.npmmirror.com/@mui/utils/5.9.3_react@18.2.0:
+  registry.npmmirror.com/@mui/utils/5.9.3:
     resolution: {integrity: sha512-l0N5bcrenE9hnwZ/jPecpIRqsDFHkPXoFUcmkgysaJwVZzJ3yQkGXB47eqmXX5yyGrSc6HksbbqXEaUya+siew==, registry: https://packages.aliyun.com/6065355e32fceefde379c17e/npm/npm-registry/, tarball: https://registry.npmmirror.com/@mui/utils/-/utils-5.9.3.tgz}
-    id: registry.npmmirror.com/@mui/utils/5.9.3
     name: '@mui/utils'
     version: 5.9.3
     engines: {node: '>=12.0.0'}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
     dependencies:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.9
       '@types/prop-types': registry.npmmirror.com/@types/prop-types/15.7.5
       '@types/react-is': registry.npmmirror.com/@types/react-is/17.0.3
       prop-types: registry.npmmirror.com/prop-types/15.8.1
-      react: registry.npmmirror.com/react/18.2.0
       react-is: registry.npmmirror.com/react-is/18.2.0
+    dev: false
+
+  registry.npmmirror.com/@mui/x-data-grid/5.17.1:
+    resolution: {integrity: sha512-EmXvQjc+DHuok7lsDBRzVJBaM8eXGULowhIPcUXCTvd6QReskRT+zh8cAzpSoqAohJwPUhrcMueeEwvoKs2s7A==, registry: https://packages.aliyun.com/6065355e32fceefde379c17e/npm/npm-registry/, tarball: https://registry.npmmirror.com/@mui/x-data-grid/-/x-data-grid-5.17.1.tgz}
+    name: '@mui/x-data-grid'
+    version: 5.17.1
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.9
+      '@mui/utils': registry.npmmirror.com/@mui/utils/5.9.3
+      clsx: registry.npmmirror.com/clsx/1.2.1
+      prop-types: registry.npmmirror.com/prop-types/15.8.1
+      reselect: registry.npmmirror.com/reselect/4.1.6
     dev: false
 
   registry.npmmirror.com/@popperjs/core/2.11.5:
@@ -1499,10 +1510,25 @@ packages:
       sourcemap-codec: registry.npmmirror.com/sourcemap-codec/1.4.8
     dev: true
 
-  registry.npmmirror.com/mobx-react-lite/3.4.0:
+  registry.npmmirror.com/mobx-react-lite/3.4.0_m26jawr67gnusmh4egzqtnhxru:
     resolution: {integrity: sha512-bRuZp3C0itgLKHu/VNxi66DN/XVkQG7xtoBVWxpvC5FhAqbOCP21+nPhULjnzEqd7xBMybp6KwytdUpZKEgpIQ==, registry: https://packages.aliyun.com/6065355e32fceefde379c17e/npm/npm-registry/, tarball: https://registry.npmmirror.com/mobx-react-lite/-/mobx-react-lite-3.4.0.tgz}
+    id: registry.npmmirror.com/mobx-react-lite/3.4.0
     name: mobx-react-lite
     version: 3.4.0
+    peerDependencies:
+      mobx: ^6.1.0
+      react: ^16.8.0 || ^17 || ^18
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      mobx: registry.npmmirror.com/mobx/6.6.1
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
     dev: false
 
   registry.npmmirror.com/mobx/6.6.1:
@@ -1695,6 +1721,12 @@ packages:
     resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==, registry: https://packages.aliyun.com/6065355e32fceefde379c17e/npm/npm-registry/, tarball: https://registry.npmmirror.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz}
     name: regenerator-runtime
     version: 0.13.9
+    dev: false
+
+  registry.npmmirror.com/reselect/4.1.6:
+    resolution: {integrity: sha512-ZovIuXqto7elwnxyXbBtCPo9YFEr3uJqj2rRbcOOog1bmu2Ag85M4hixSwFWyaBMKXNgvPaJ9OSu9SkBPIeJHQ==, registry: https://packages.aliyun.com/6065355e32fceefde379c17e/npm/npm-registry/, tarball: https://registry.npmmirror.com/reselect/-/reselect-4.1.6.tgz}
+    name: reselect
+    version: 4.1.6
     dev: false
 
   registry.npmmirror.com/resolve-from/4.0.0:

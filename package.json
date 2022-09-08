@@ -15,6 +15,7 @@
     "@fontsource/roboto": "^4.5.7",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.3",
+    "@mui/x-data-grid": "^5.17.1",
     "@tauri-apps/api": "^1.0.2",
     "mobx": "^6.6.1",
     "mobx-react-lite": "^3.4.0",

@@ -1,4 +1,4 @@
-import { WeaponItem } from './types';
+import { WeaponItem } from './share/types';
 import { action, makeObservable, observable } from 'mobx';
 
 export class WeaponStore {
